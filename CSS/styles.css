@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(29, 29, 29);
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: rgb(157, 238, 211);
+    
+}
+
+button {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    border-radius: 0.2rem;
+    padding: .3rem .4rem;
+    border: none;
+    cursor:pointer;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+button i {
+    color: white;
+    pointer-events: none;
+}
+
+input,
+select{
+    padding: .25rem .5rem;
+    
+}
+
+.hide {
+    display: none;
+}
+
+/* header */
+
+.todo-container {
+    max-width: 450px ;
+    margin: 3rem auto;
+    background-color: rgb(209, 241, 231) ;
+    padding: 2rem;
+    border-radius: 15px ;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.todo-container header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 0.5px dotted rgb(176, 179, 179);
+
+}
+
+#todo-form, #edit-form{
+    max-width: 450px;
+    padding: 1rem;
+    border-bottom: 0.5px dotted rgb(176, 179, 179);
+    align-self: center;
+    
+    
+}
+
+#todo-form p,
+#edit-form p,
+#tool-bar p {
+    margin-bottom: 0.3rem;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-control input {
+    margin-right: 0.3rem;
+    width: 18rem;
+}
+
+#cancel-edit-button {
+    margin-top: 0.7rem;
+    padding: 0.2rem 1rem;
+    
+}
+
+#tool-bar {
+    margin-bottom: 0.5rem;
+    padding: 0.8rem 0 1.3rem 0;
+    align-self: center;
+    
+}
+
+#tool-bar, .search-block {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.5px dotted rgb(176, 179, 179);
+    
+}
+
+#search input {
+    margin-right: 0.3rem;
+}
+
+#search button {
+    margin-right: 0.6rem;
+}
+
+.todo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 2rem;
+    border-bottom: 0.5px dotted rgb(176, 179, 179);
+    padding: 0.3rem 0;
+}
+
+.todo-buttons {
+    display: flex;
+    gap: 0.3rem;
+    justify-content: end;
+    margin-bottom: 0.5rem;
+    
+}

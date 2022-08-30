@@ -17,15 +17,16 @@
             <h1>Daily Organizer</h1>
         </header>
         <form action="" id="todo-form">
-            <p>Add here a new task:</p>
+            <p>Add here a new task</p>
             <div class="form-control">
-                <input type="text" id="todo-input" placeholder="What you need to do today?">
+                <input type="text" id="todo-input" placeholder="What do you need to do this day?">
                 <button type="submit">
                     <i class="fa-solid fa-plus"></i>
                 </button>
             </div>
         </form>
-        <form id="edit-form">
+        <!-- add class hide in form below -->
+        <form id="edit-form" class=""> 
                 <p>Edit this task</p>
                 <div class="form-control">
                     <input type="text" name="" id="edit-input">
@@ -33,12 +34,12 @@
                         <i class="fa-solid fa-check"></i>
                     </button>                    
                 </div>  
-                <button id="cancel-edit-button">Cancel</button>               
+                <button id="cancel-edit-button">cancel</button>               
             </form>
             <div id="tool-bar">
                 <div id="search">
-                    <h4>Search:</h4>
-                    <form>
+                    <p>Search</p>
+                    <form class="search-block">
                         <input type="text" name="" id="search-input" placeholder="Find a created task">
                         <button id="erase-button">
                             <i class="fa-solid fa-eraser"></i>
@@ -46,7 +47,7 @@
                     </form>
                 </div>
                 <div id="filter">
-                    <h4>Filter:</h4>
+                    <p>Filter</p>
                     <select id="filter-select">
                         <option value="all">All</option>
                         <option value="done">Done</option>
@@ -57,18 +58,18 @@
         
         <div id="todo-list">
             <div class="todo">
-                <h3>Tasks to do</h3>
-                <button class="finish-todo">
-                    <i class="fa-solid fa-badge-check"></i>
-                </button>
-                <button class="finish-todo">
-                    <i class="fa-solid fa-badge-check"></i>
-                </button>
-                <button class="finish-todo">
-                    <i class="fa-solid fa-badge-check"></i>
-                </button>
-
-
+                <h4>Drink much more whater!</h4>
+                <div class="todo-buttons">
+                    <button class="finish-todo">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </button>
+                    <button class="edit-todo">
+                        <i class="fa-solid fa-pencil"></i>
+                    </button>
+                    <button class="remove-todo">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
