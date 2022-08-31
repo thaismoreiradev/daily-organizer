@@ -20,33 +20,33 @@
             <p>Add here a new task</p>
             <div class="form-control">
                 <input type="text" id="todo-input" placeholder="What do you need to do this day?">
-                <button type="submit">
+                <button type="submit"  title="add">
                     <i class="fa-solid fa-plus"></i>
                 </button>
             </div>
         </form>
         <!-- add class hide in form below -->
-        <form id="edit-form" class=""> 
+        <form id="edit-form" class="hide"> 
                 <p>Edit this task</p>
                 <div class="form-control">
                     <input type="text" name="" id="edit-input">
-                    <button type="submit">
+                    <button type="submit"  title="save">
                         <i class="fa-solid fa-check"></i>
                     </button>                    
                 </div>  
-                <button id="cancel-edit-button">cancel</button>               
+                <button id="cancel-edit-button" title="cancel">cancel</button>               
             </form>
             <div id="tool-bar">
                 <div id="search">
                     <p>Search</p>
                     <form class="search-block">
                         <input type="text" name="" id="search-input" placeholder="Find a created task">
-                        <button id="erase-button">
+                        <button id="erase-button"  title="clean">
                             <i class="fa-solid fa-eraser"></i>
                         </button>
                     </form>
                 </div>
-                <div id="filter">
+                <div class="filter" id="filter">
                     <p>Filter</p>
                     <select id="filter-select">
                         <option value="all">All</option>
@@ -57,16 +57,16 @@
             </div>
         
         <div id="todo-list">
-            <div class="todo">
+            <div class="todo done">
                 <h4>Drink much more whater!</h4>
                 <div class="todo-buttons">
-                    <button class="finish-todo">
+                    <button class="finish-todo"  title="done">
                         <i class="fa-solid fa-circle-check"></i>
                     </button>
-                    <button class="edit-todo">
+                    <button class="edit-todo" title="edit">
                         <i class="fa-solid fa-pencil"></i>
                     </button>
-                    <button class="remove-todo">
+                    <button class="remove-todo" title="delete">
                         <i class="fa-solid fa-trash-can"></i>
                     </button>
                 </div>

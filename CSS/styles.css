@@ -117,19 +117,35 @@ select{
     margin-right: 0.6rem;
 }
 
-.todo {
+
+
+.todo{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 2rem;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
     border-bottom: 0.5px dotted rgb(176, 179, 179);
+    padding: 0.3rem 0;
+    transition: 0.2s;
+}
+
+.todo h4 {
+    flex: 1;
+    align-self:flex-start;
     padding: 0.3rem 0;
 }
 
 .todo-buttons {
     display: flex;
+    flex-direction: row;
     gap: 0.3rem;
-    justify-content: end;
     margin-bottom: 0.5rem;
     
+    
+        
+}
+
+.done h4{
+    color: rgb(128, 128, 128);
+    text-decoration: line-through;
 }
