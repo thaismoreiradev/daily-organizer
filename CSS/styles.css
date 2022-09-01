@@ -133,6 +133,7 @@ select{
     flex: 1;
     align-self:flex-start;
     padding: 0.3rem 0;
+    word-break: break-all;
 }
 
 .todo-buttons {
@@ -142,10 +143,13 @@ select{
     margin-bottom: 0.5rem;
     
     
+    
         
 }
 
 .done h4{
     color: rgb(128, 128, 128);
     text-decoration: line-through;
+    
+
 }
