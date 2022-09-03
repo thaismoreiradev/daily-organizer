@@ -16,28 +16,28 @@
         <header>
             <h1>Daily Organizer</h1>
         </header>
-        <form action="" id="todo-form">
+        <form action="" id="todo-form" class="todo-form">
             <p>Add here a new task</p>
             <div class="form-control">
-                <input type="text" id="todo-input" placeholder="What do you need to do this day?">
-                <button type="submit"  title="add">
+                <input type="text" id="todo-input" placeholder="What do you need to?">
+                <button type="submit" title="add">
                     <i class="fa-solid fa-plus"></i>
                 </button>
             </div>
         </form>
         <!-- add class hide in form below -->
-        <form id="edit-form" class="hide"> 
-                <p>Edit this task</p>
-                <div class="form-control">
-                    <input type="text" name="" id="edit-input">
-                    <button type="submit"  title="save">
-                        <i class="fa-solid fa-check"></i>
-                    </button>                    
-                </div>  
-                <button id="cancel-edit-button" title="cancel">cancel</button>               
-            </form>
-            <!-- <div id="tool-bar">
-                <div id="search">
+        <form id="edit-form" class="hide edit-form">
+            <p>Edit this task</p>
+            <div class="form-control">
+                <input type="text" name="" id="edit-input">
+                <button type="submit" title="save">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+            </div>
+            <button id="cancel-edit-button" title="cancel" class="cancel-edit-button">cancel</button>
+        </form>
+        <!-- <div id="tool-bar" class="tool-bar">
+                <div id="search" class="search">
                     <p>Search</p>
                     <form class="search-block">
                         <input type="text" name="" id="search-input" placeholder="Find a created task">
@@ -55,7 +55,6 @@
                     </select>
                 </div>
             </div> -->
-        
         <div id="todo-list">
             <!-- <div class="todo done">
                 <h4>Drink much more whater!</h4>
@@ -73,5 +72,9 @@
             </div> -->
         </div>
     </div>
+    <footer>
+        <p>Developed by <a href="https://github.com/thaismoreiradev" target="_blank" rel="noopener noreferrer">Thais
+                Moreira</a> </p>
+    </footer>
 </body>
 </html>

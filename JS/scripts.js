@@ -6,10 +6,6 @@ const getLocalStorage = () => {
     return []
   }
 }
-
-
-
-
 // elements
 const todoForm = document.querySelector("#todo-form");
 const todoInput = document.querySelector("#todo-input");
@@ -34,8 +30,7 @@ const saveTodo = (text) => {
     
     const todoTitle = document.createElement("h4");
     todoTitle.innerText = text;
-    todo.appendChild(todoTitle);
-    
+    todo.appendChild(todoTitle);    
 
     const doneBtn = document.createElement("button");
     doneBtn.classList.add("finish-todo");
@@ -55,7 +50,6 @@ const saveTodo = (text) => {
     deleteBtn.innerHTML = '<i class="fa-solid fa-trash-can"></i>';
     todo.appendChild(deleteBtn);
 
-
     todoList.appendChild(todo);
 
     todoInput.value = "";
@@ -67,7 +61,6 @@ const toggleForms = () => {
     todoList.classList.toggle("hide");
 }
 
-
 const updateTodo = (text) => {
     const todos = document.querySelectorAll(".todo");
     todos.forEach((todo) => {
@@ -75,7 +68,6 @@ const updateTodo = (text) => {
         if (todoTitle.innerText === oldInputValue){
             todoTitle.innerText = text;
         }
-
     })
 }
 
@@ -83,16 +75,12 @@ const updateTodo = (text) => {
 
 console.log(todoForm)
 todoForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    
+    e.preventDefault();    
     const inputValue = todoInput.value;
     if (inputValue) {
         saveTodo(inputValue);
     }
-
-
 });
-
 
 document.addEventListener("click", (e) => {
     const targetEl = e.target;
@@ -116,9 +104,7 @@ document.addEventListener("click", (e) => {
 
         editInput.value = todoTitle;
         oldInputValue = todoTitle;
-
     }
-
 });
 
 cancelEditButton.addEventListener("click", (e) => {
@@ -132,7 +118,5 @@ editForm.addEventListener("submit", (e) => {
     if(editInputValue){
         updateTodo(editInputValue);
     }
-
     toggleForms();
-
 })
